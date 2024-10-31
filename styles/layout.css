@@ -1,4 +1,8 @@
 main {
+  width: min(100%, 78rem );
+  margin: auto;
+  padding-inline: 2rem ;
+
   display: grid;
 
   grid-template-areas:
@@ -6,6 +10,8 @@ main {
     "draw"
     "info"
   ;
+
+  justify-content: space-between;
 
   & section.title {
     grid-area: title;
@@ -32,8 +38,8 @@ main {
       "title draw"
       "info draw"
     ;
-    grid-template-columns: 1fr 48.7%;
+    grid-template-columns: 508px 48%;
 
-    gap: 3rem 6.75rem;
+    gap: 3rem 1rem;
   }
 }
