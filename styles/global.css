@@ -65,7 +65,14 @@
 
 
 body {
-  background-color: var(--bg-primary);
   color: var(--content-secondary);
   font: var(--text-md);
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.90) 22.66%, rgba(0, 0, 0, 0.54) 100%), url('../assets/imgs/bg-shape.png');
+  background-size: 80%;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-color: var(--bg-primary);
+
+  min-height: 100vh;
 }
