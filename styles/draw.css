@@ -1,0 +1,137 @@
+.draw {
+  margin-top: 2.625rem;
+  padding-inline: 2.25rem;
+  display: grid;
+  gap: 2.5rem;
+
+  & header {
+    & h2 {
+      font: var(--label-md);
+      color: var(--content-primary);
+      text-transform: uppercase;
+    }
+
+    & p {
+      font: var(--text-md);
+      color: var(--content-tertiary);
+      margin-top: 2px;
+    }
+
+  }
+
+  & .draw-container {
+    display: grid;
+    gap: 1.25rem;
+
+    & .draw-wrapper {
+      display: flex;
+      gap: .75rem;
+
+      & div {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+
+        & span:first-child {
+          font: var(--label-sm);
+          text-transform: uppercase;
+
+        }
+
+        & span:last-child {
+
+          display: inline-block;
+          font: var(--display-sm);
+          color: var(--content-primary);
+          border-radius: 8px;
+          border: 1px solid var(--background-secondary, #111012);
+          background: var(--background-secondary, #111012);
+          padding: .25rem .5rem;
+          width: 5.375rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  & .switch-wrapper {
+    position: relative;
+    display: flex;
+    gap: .5rem;
+
+    &:has(:checked) {
+      &>span {
+        background-image: var(--gradient-background, linear-gradient(91deg, #D586E0 0%, #91A1FA 98.93%));
+
+        & .ball {
+          transform: translateX(70%);
+        }
+      }
+
+
+    }
+
+    & input {
+      position: absolute;
+      opacity: 0;
+      width: 1.875rem;
+      height: 1.25rem;
+
+    }
+
+    &>span {
+      width: 1.875rem;
+      height: 1.25rem;
+      background: var(--content-tertiary);
+      border-radius: 16px;
+      position: relative;
+      z-index: -1;
+      transition: background-image .2s ease-in-out;
+
+
+      & .ball {
+        display: inline-block;
+        width: 0.875rem;
+        height: 0.875rem;
+        background-color: var(--content-primary);
+        border-radius: 50%;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        z-index: -1;
+
+        transition: transform .2s ease-in-out;
+      }
+    }
+
+    & label {
+      font: 400 .75rem/1.5 var(--ff-inter);
+      color: var(--content-primary);
+    }
+
+
+  }
+
+  &>button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    font: var(--label-sm);
+    text-transform: uppercase;
+
+    color: var(--content-primary);
+    background: var(--bg-tertiary);
+
+    padding: 1rem;
+    border: none;    
+    border-radius: 8px;
+  }
+}
+
+@media (width > 768px) {
+  .draw {}
+}

@@ -26,7 +26,40 @@
       <h1>Sorteador de números</h1>
     </section>
     <section class="info"></section>
-    <section class="draw"></section>
+    <section class="draw">
+      <header>
+        <h2>Quero sortear:</h2>
+        <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e
+          fácil!</p>
+
+      </header>
+      <div class="draw-container">
+        <div class="draw-wrapper">
+          <div>
+            <span>números</span>
+            <span id="amount">2</span>
+          </div>
+          <div>
+            <span>DE</span>
+            <span id="start">1</span>
+          </div>
+          <div>
+            <span>DE</span>
+            <span id="end">100</span>
+          </div>
+        </div>
+        <div class="switch-wrapper">
+          <input type="checkbox" id="switch">
+          <span>
+            <span class="ball"></span>
+          </span>
+          <label for="switch">Não repetir números</label>
+        </div>
+      </div>
+      <button>Sortear <img src="./assets/icons/arrow-right.svg" alt=""></button>
+
+
+    </section>
   </main>
 
   <div id="shape"></div>

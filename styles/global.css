@@ -36,13 +36,12 @@
   --ff-sora: 'Sora', sans-serif;
   --ff-roboto-flex: 'Roboto Flex', sans-serif;
   --ff-roboto-mono: 'Roboto Mono', monospace;
-
+  --ff-inter: 'Inter', sans-serif;
 
   --display-md: 800 2.5rem/1.3 var(--ff-sora);
   --display-sm: 700 2rem/1.3 var(--ff-sora);
 
   --overline: 700 1rem/1.5 var(--ff-roboto-mono);
-
 
   --text-md: 500 .875rem/1.5 var(--ff-roboto-flex);
   --text-sm: 500 .75rem/1.5 var(--ff-roboto-flex);
