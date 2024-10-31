@@ -1,4 +1,5 @@
 main {
+  display: grid;
 
   grid-template-areas:
     "title"
@@ -27,7 +28,6 @@ main {
 @media (width > 768px) {
   main {
 
-    display: grid;
     grid-template-areas:
       "title draw"
       "info draw"

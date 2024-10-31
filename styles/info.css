@@ -1,0 +1,26 @@
+section.info{
+  margin-block: 5rem 2.75rem;
+  padding-inline: 2.25rem;
+  display: grid;
+  gap: 2.25rem;
+
+
+  & > div{
+    display: flex;
+    gap: .5rem;
+    align-items: flex-start;
+
+    & img {}
+
+    & div {
+      & h3 {
+        font: var(--text-md);
+        color: var(--content-brand);
+      }
+      & p {
+        font: var(--text-sm);
+      }
+    }
+
+  }
+}
