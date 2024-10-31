@@ -1,0 +1,39 @@
+main {
+
+  grid-template-areas:
+    "title"
+    "draw"
+    "info"
+  ;
+
+  & section.title {
+    grid-area: title;
+  }
+
+  & section.info {
+    grid-area: info;
+  }
+
+  & section.draw {
+    grid-area: draw;
+  }
+
+
+
+}
+
+
+
+@media (width > 768px) {
+  main {
+
+    display: grid;
+    grid-template-areas:
+      "title draw"
+      "info draw"
+    ;
+    grid-template-columns: 1fr 48.7%;
+
+    gap: 3rem 6.75rem;
+  }
+}

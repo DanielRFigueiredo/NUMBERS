@@ -1,0 +1,37 @@
+section.title {
+  padding-inline: 2.25rem;
+
+
+  & span {
+    font: var(--overline);
+
+    background: var(--gradient-content);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  & h1 {
+    font: var(--display-md);
+    color: var(--content-primary);
+
+    text-transform: uppercase;
+    letter-spacing: -1.6px;
+
+    margin-top: .5rem;
+  }
+
+
+}
+
+
+@media (width > 768px) {
+
+  section.title {
+    padding: 0;
+
+
+
+  }
+
+}
