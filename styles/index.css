@@ -1,7 +1,9 @@
 @import url('./global.css');
-@import url('./utility.css');
 @import url('./layout.css');
 @import url('./header.css');
 @import url('./title.css');
 @import url('./info.css');
 @import url('./draw.css');
+@import url('./utility.css');
+
+@import url('./animation.css');

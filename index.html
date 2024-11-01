@@ -13,6 +13,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
     rel="stylesheet">
+
+  <script type="module" src="./scripts/index.js" defer></script>
 </head>
 
 <body>
@@ -45,40 +47,73 @@
 
     </section>
     <section class="draw">
-      <header>
-        <h2>Quero sortear:</h2>
-        <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e
-          fácil!</p>
+      <div id="draw" class="">
+        <header>
+          <h2>Quero sortear:</h2>
+          <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e
+            fácil!</p>
 
-      </header>
-      <div class="draw-container">
-        <div class="draw-wrapper">
-          <div>
-            <span>números</span>
-            <span id="amount">2</span>
+        </header>
+        <div class="draw-container">
+          <div class="draw-wrapper">
+            <div>
+              <span>números</span>
+              <span id="amount" contenteditable>2</span>
+            </div>
+            <div>
+              <span>DE</span>
+              <span id="start" contenteditable>1</span>
+            </div>
+            <div>
+              <span>DE</span>
+              <span id="end" contenteditable>100</span>
+            </div>
           </div>
-          <div>
-            <span>DE</span>
-            <span id="start">1</span>
-          </div>
-          <div>
-            <span>DE</span>
-            <span id="end">100</span>
+          <div class="switch-wrapper">
+            <input type="checkbox" id="switch">
+            <span>
+              <span class="ball"></span>
+            </span>
+            <label for="switch">Não repetir números</label>
           </div>
         </div>
-        <div class="switch-wrapper">
-          <input type="checkbox" id="switch">
-          <span>
-            <span class="ball"></span>
-          </span>
-          <label for="switch">Não repetir números</label>
+        <div>
+
+        </div>
+        <div class="area-btn">
+          <button>Sortear <img src="./assets/icons/arrow-right.svg" alt=""></button>
         </div>
       </div>
-      <button>Sortear <img src="./assets/icons/arrow-right.svg" alt=""></button>
+      <div id="result" class="hidden">
+        <header>
+          <h2>Resultado do sorteio</h2>
+          <h3>1° Resultado</h3>
+
+        </header>
+        <div class="resultado">
+          <div class="card">
+            <span class="square"></span>
+            <h2>23</h2>
+          </div>
+          <div class="card" style="--delay:4s">
+            <span class="square"></span>
+            <h2>12</h2>
+          </div>
+          <div class="card" style="--delay:7s">
+            <span class="square"></span>
+            <h2>02</h2>
+          </div>
+          <div class="card" style="--delay:10s">
+            <span class="square"></span>
+            <h2>35</h2>
+          </div>
+        </div>
+
+        <button>Sortear novamente <img src="./assets/icons/play.svg" alt="sortear novamente"></button>
+      </div>
     </section>
   </main>
 
-  <div id="shape"></div>
 
 </body>
 

@@ -1,0 +1,136 @@
+/* animação dos numeros surgindo */
+.card {
+  --delay: 0s;
+
+  & .square {
+    animation: square 3s var(--delay) linear both;
+
+  }
+
+  & h2 {
+    animation: h2 3s var(--delay) linear both;
+  }
+}
+
+@keyframes square {
+  0% {
+    scale: .5;
+    opacity: 0;
+    background-color: var(--content-brand);
+  }
+
+  15% {
+    scale: 1;
+    opacity: 1;
+  }
+
+  20% {
+    scale: 1.1;
+  }
+
+  25%,
+  35% {
+    scale: 1;
+    transform: rotate(0deg);
+  }
+
+  65%,
+  90% {
+
+    transform: rotate(180deg);
+    background-color: var(--content-brand);
+    scale: 1;
+  }
+
+  100% {
+    transform: rotate(180deg);
+    scale: .5;
+  }
+
+
+}
+
+@keyframes h2 {
+
+  0%,
+  40% {
+    opacity: 0;
+    transform: scale(1.4);
+    color: black;
+    filter: blur(5px);
+  }
+
+
+  50%,
+  90% {
+    filter: blur(0);
+    transform: scale(1.4);
+    opacity: 1;
+    color: black
+  }
+
+
+}
+
+/* --------------------------------------- */
+
+/* animação do hover do button sortear -> */
+
+main button {
+
+
+  &:hover {
+    background: var(--bg-secondary);
+
+    & img {
+      animation: img-hover-animation .5s linear alternate infinite;
+    }
+
+  }
+}
+
+.area-btn {
+  animation: button-hover-bg 3s linear alternate infinite;
+
+  &:hover {
+    padding: 2px;
+
+  }
+}
+
+@keyframes img-hover-animation {
+  to {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes button-hover-bg {
+  0% {
+    background: linear-gradient(0deg, var(--accent-green) 0%, var(--accent-lime) 14.84%, var(--accent-red) 32.15%, var(--accent-pink) 65.79%, var(--accent-blue) 84.58%);
+
+  }
+
+  20% {
+    background: linear-gradient(45deg, var(--accent-green) 0%, var(--accent-lime) 14.84%, var(--accent-red) 32.15%, var(--accent-pink) 65.79%, var(--accent-blue) 84.58%);
+
+  }
+
+  40% {
+    background: linear-gradient(90deg, var(--accent-green) 0%, var(--accent-lime) 14.84%, var(--accent-red) 32.15%, var(--accent-pink) 65.79%, var(--accent-blue) 84.58%);
+
+  }
+
+  60% {
+    background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-lime) 14.84%, var(--accent-red) 32.15%, var(--accent-pink) 65.79%, var(--accent-blue) 84.58%);
+
+  }
+
+  80% {
+    background: linear-gradient(180deg, var(--accent-green) 0%, var(--accent-lime) 14.84%, var(--accent-red) 32.15%, var(--accent-pink) 65.79%, var(--accent-blue) 84.58%);
+
+  }
+
+
+
+
+}
